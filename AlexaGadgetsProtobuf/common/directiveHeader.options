@@ -1,0 +1,4 @@
+header.DirectiveHeaderProto.namespace    max_size:32
+header.DirectiveHeaderProto.name    max_size:32
+header.DirectiveHeaderProto.messageId    max_size:32
+header.DirectiveHeaderProto.dialogRequestId    max_size:32

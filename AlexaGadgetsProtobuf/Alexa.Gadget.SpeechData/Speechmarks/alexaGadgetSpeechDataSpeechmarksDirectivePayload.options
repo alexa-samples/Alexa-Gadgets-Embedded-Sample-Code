@@ -1,0 +1,3 @@
+alexaGadgetSpeechData.SpeechmarksDirectivePayloadProto.speechmarksData    max_count:1
+alexaGadgetSpeechData.SpeechmarksDirectivePayloadProto.SpeechmarksData.type    max_size:10
+alexaGadgetSpeechData.SpeechmarksDirectivePayloadProto.SpeechmarksData.value    max_size:10

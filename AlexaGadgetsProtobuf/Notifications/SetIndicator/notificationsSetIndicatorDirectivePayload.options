@@ -1,0 +1,2 @@
+notifications.SetIndicatorDirectivePayloadProto.Asset.assetId    max_size:64
+notifications.SetIndicatorDirectivePayloadProto.Asset.url    max_size:64

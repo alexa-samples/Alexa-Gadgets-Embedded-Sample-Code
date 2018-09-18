@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package alexaDiscovery;
+
+option java_package = "com.amazon.proto.avs.v20160207.alexaDiscovery";
+
+option java_outer_classname = "DiscoverResponseEventPayload";
+
+message DiscoverResponseEventPayloadProto {
+	repeated Endpoints endpoints = 1;
+	message Endpoints {
+		repeated Capabilities capabilities = 11;
+		message Capabilities {
+			Configuration configuration = 4;
+			message Configuration {
+				repeated SupportedTypes supportedTypes = 1;
+				message SupportedTypes {
+					string name = 1;
+				}
+			}
+			string type = 1;
+			string interface = 2;
+			string version = 3;
+		}
+		AdditionalIdentification additionalIdentification = 12;
+		message AdditionalIdentification {
+			string modelName = 5;
+			string deviceTokenEncryptionType = 3;
+			string firmwareVersion = 1;
+			string amazonDeviceType = 4;
+			string radioAddress = 6;
+			string deviceToken = 2;
+		}
+		string endpointId = 1;
+		string manufacturerName = 4;
+		string description = 3;
+		string friendlyName = 2;
+	}
+}

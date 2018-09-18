@@ -1,0 +1,40 @@
+The bluetooth_eir.c contains methods to generate the EIR data using the following API:
+
+#Specification:
+https://developer.amazon.com/docs/gadgets-sdk/gadget-settings-bluetooth-communication.html#eir
+
+void construct_gadget_eir(uint8_t* buffer, uint8_t* p_len, const char* gadget_name, uint16_t pid, uint16_t vid);
+
+uint8_t* buffer
+The input buffer to the API that will poppulated with the EIR that needs to be
+provided to the BT stack for providing inquiry responses to the host trying to perform
+inquiry scans on the gadget
+
+uint8_t* p_len
+Input pointer to the length. This pointer will point to the actual number of bytes in the buffer
+containing the EIR data
+
+const char* name
+The gadget bluetooth friendly name
+
+uint16_t pid
+The two byte Product ID
+
+uint16_t vid
+The two byte Vendor ID
+
+
+Files:
+bluetooth_eir.h
+Contains various macros and constants required in creation of the EIR
+
+bluetooth_eir.c
+Contains the implementation of EIR
+Also, contains main() function for sample call to the API
+
+Compilation and Execution
+To compile the code using gcc:
+gcc bluetooth_eir.c -o bluetooth_eir
+
+
+

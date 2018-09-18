@@ -1,0 +1,3 @@
+alexaGadgetStateListener.StateUpdateDirectivePayloadProto.states    max_count:5
+alexaGadgetStateListener.StateUpdateDirectivePayloadProto.States.name    max_size:32
+alexaGadgetStateListener.StateUpdateDirectivePayloadProto.States.value    max_size:32

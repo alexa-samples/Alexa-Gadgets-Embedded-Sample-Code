@@ -1,0 +1,16 @@
+alexaDiscovery.DiscoverResponseEventPayloadProto.endpoints    max_count:1
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.capabilities    max_count:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.Capabilities.Configuration.supportedTypes    max_count:10
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.Capabilities.Configuration.SupportedTypes.name    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.Capabilities.type    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.Capabilities.interface    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.Capabilities.version    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.AdditionalIdentification.modelName    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.AdditionalIdentification.deviceTokenEncryptionType    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.AdditionalIdentification.firmwareVersion    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.AdditionalIdentification.amazonDeviceType    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.AdditionalIdentification.radioAddress    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.AdditionalIdentification.deviceToken    max_size:65
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.endpointId    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.description    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.friendlyName    max_size:32

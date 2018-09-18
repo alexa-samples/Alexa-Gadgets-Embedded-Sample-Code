@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package alexaDiscovery;
+
+option java_package = "com.amazon.proto.avs.v20160207.alexaDiscovery";
+
+option java_outer_classname = "DiscoverResponseEvent";
+
+import "eventHeader.proto";
+import "alexaDiscoveryDiscoverResponseEventPayload.proto";
+
+message DiscoverResponseEventProto {
+	Event event = 1;
+	message Event {
+		alexaDiscovery.DiscoverResponseEventPayloadProto payload = 2;
+		header.EventHeaderProto header = 1;
+	}
+}

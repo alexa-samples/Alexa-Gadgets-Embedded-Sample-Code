@@ -1,0 +1,2 @@
+alexaDiscovery.DiscoverDirectivePayloadProto.Scope.type    max_size:32
+alexaDiscovery.DiscoverDirectivePayloadProto.Scope.token    max_size:32

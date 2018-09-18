@@ -1,0 +1,12 @@
+Files contained:
+sdp_db.c
+sdp_db.h
+
+API:
+void set_sdp_db(uint16_t pid, uint16_t vid);
+
+pid: Product ID of the gadget
+vid: Vendor ID of the gadget
+
+This implementation is specific to the Cypress WICED SDK and relies on Macros
+defined in the SDK.
