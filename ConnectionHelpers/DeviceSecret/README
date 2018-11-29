@@ -1,0 +1,30 @@
+The Code provided here uses the following files from mbedtls library:
+Source Files:
+platform.c
+platform_util.c 
+sha256.c
+
+Header Files:
+check_config.h  
+config.h        
+platform.h      
+platform_time.h 
+platform_util.h 
+sha256.h
+
+
+The above mentioned files can be downloaded from the following link:
+https://tls.mbed.org/ (Apache 2.0 License)
+
+The file: create_secret.c can be used as a reference on how to create the deviceToken required as a mandatory fields in the Discovery Response send back to the Echo device after initial connection, as described here:
+https://developer.amazon.com/docs/alexa-gadgets-toolkit-preview/alexa-discovery-interface.html#AdditionalIdentification
+
+Steps:
+1. Replace the "device_secret" char array with the device secret received from the dev portal
+2. Replace the "gadgetId" char array with the Gadget Device Id received from the dev portal.
+3. Save the create_secret.c file, and using a gcc compile, create the executable:
+
+gcc platform.c platform_util.c sha256.c create_secret.c -o create_secret
+
+
+4. Execute the file "create_secret" to generate the device token
