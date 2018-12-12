@@ -34,3 +34,7 @@ This folder contains sample code for the Extended Inquiry Response (EIR). This i
 #### /ConnectionHelpers/SDP
 
 This folder contains sample code for the Service Discover Protocol (SDP) database settings that must be added to the SDP database in order for your gadget to establish a bluetooth connection. For more information please see [SDP Settings](https://developer.amazon.com/docs/alexa-gadgets-toolkit/gadget-settings-bluetooth-communication.html#sdp-database).
+
+#### /ConnectionHelpers/PacketHelper
+
+This folder contains sample code for extracting packets from streaming buffers. Your Bluetooth connection is a stream based protocol, so there is no guarantee that you receive one packet at a time. For more information please see [Exchange Packets](https://developer.amazon.com/docs/alexa-gadgets-toolkit/exchange-packets.html).
