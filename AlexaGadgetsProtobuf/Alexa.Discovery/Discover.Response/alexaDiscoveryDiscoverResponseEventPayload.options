@@ -14,3 +14,4 @@ alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.AdditionalIdentificat
 alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.endpointId    max_size:32
 alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.description    max_size:32
 alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.friendlyName    max_size:32
+alexaDiscovery.DiscoverResponseEventPayloadProto.Endpoints.manufacturerName max_size:32

@@ -15,7 +15,7 @@ REM ///////////////
 
 
 REM INSTRUCTIONS
-REM Run this script from the \utils folder
+REM Run this script from the \examples folder
 REM change the PROTO_COMPILE_PATH variable below to point to the install location of Nanopb that contains protoc.exe
 set PROTO_COMPILE_PATH=C:\nanopb\nanopb-0.3.9.1-windows-x86\generator-bin\
 
