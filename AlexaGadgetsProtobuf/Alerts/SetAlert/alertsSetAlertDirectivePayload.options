@@ -1,0 +1,9 @@
+alerts.SetAlertDirectivePayloadProto.assetPlayOrder    max_count:1
+alerts.SetAlertDirectivePayloadProto.assetPlayOrder    max_size:16
+alerts.SetAlertDirectivePayloadProto.scheduledTime    max_size:64
+alerts.SetAlertDirectivePayloadProto.assets    max_count:1
+alerts.SetAlertDirectivePayloadProto.Assets.assetId    max_size:32
+alerts.SetAlertDirectivePayloadProto.Assets.url    max_size:64
+alerts.SetAlertDirectivePayloadProto.backgroundAlertAsset    max_size:16
+alerts.SetAlertDirectivePayloadProto.type    max_size:32
+alerts.SetAlertDirectivePayloadProto.token    max_size:64

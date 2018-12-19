@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package alerts;
+
+option java_package = "com.amazon.proto.avs.v20160207.alerts";
+
+option java_outer_classname = "SetAlertDirective";
+
+import "directiveHeader.proto";
+import "alertsSetAlertDirectivePayload.proto";
+
+message SetAlertDirectiveProto {
+	Directive directive = 1;
+	message Directive {
+		alerts.SetAlertDirectivePayloadProto payload = 2;
+		header.DirectiveHeaderProto header = 1;
+	}
+}

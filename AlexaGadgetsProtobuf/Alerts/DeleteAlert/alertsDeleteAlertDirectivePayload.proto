@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package alerts;
+
+option java_package = "com.amazon.proto.avs.v20160207.alerts";
+
+option java_outer_classname = "DeleteAlertDirectivePayload";
+
+message DeleteAlertDirectivePayloadProto {
+	string token = 1;
+}

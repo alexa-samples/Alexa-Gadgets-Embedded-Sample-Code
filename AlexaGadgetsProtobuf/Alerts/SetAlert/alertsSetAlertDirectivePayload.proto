@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package alerts;
+
+option java_package = "com.amazon.proto.avs.v20160207.alerts";
+
+option java_outer_classname = "SetAlertDirectivePayload";
+
+message SetAlertDirectivePayloadProto {
+	repeated string assetPlayOrder = 5;
+	int32 loopPauseInMilliSeconds = 8;
+	string scheduledTime = 3;
+	repeated Assets assets = 4;
+	message Assets {
+		string assetId = 1;
+		string url = 2;
+	}
+	int32 loopCount = 7;
+	string backgroundAlertAsset = 6;
+	string type = 2;
+	string token = 1;
+}
