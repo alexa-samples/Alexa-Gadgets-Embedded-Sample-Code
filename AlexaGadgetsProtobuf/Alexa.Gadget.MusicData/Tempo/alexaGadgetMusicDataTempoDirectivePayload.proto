@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package alexaGadgetMusicData;
+
+option java_package = "com.amazon.proto.avs.v20160207.alexaGadgetMusicData";
+
+option java_outer_classname = "TempoDirectivePayload";
+
+message TempoDirectivePayloadProto {
+	int32 playerOffsetInMilliSeconds = 1;
+	repeated TempoData tempoData = 2;
+	message TempoData {
+		int32 startOffsetInMilliSeconds = 2;
+		int32 value = 1;
+	}
+}

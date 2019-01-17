@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package alexaGadgetMusicData;
+
+option java_package = "com.amazon.proto.avs.v20160207.alexaGadgetMusicData";
+
+option java_outer_classname = "TempoDirective";
+
+import "directiveHeader.proto";
+import "alexaGadgetMusicDataTempoDirectivePayload.proto";
+
+message TempoDirectiveProto {
+	Directive directive = 1;
+	message Directive {
+		alexaGadgetMusicData.TempoDirectivePayloadProto payload = 2;
+		header.DirectiveHeaderProto header = 1;
+	}
+}
