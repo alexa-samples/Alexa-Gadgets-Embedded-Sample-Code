@@ -11,7 +11,7 @@ This library is licensed under the Amazon Software License.
 
 This folder contains the protocol buffer (protobuf) message definition files and scripts to compile the corresponding serializer/deserializers.
 
-#### /AlexaGadgetsProtobuf/Utils
+#### /AlexaGadgetsProtobuf/examples
 
 This folder contains an example of a single protobuf deinfition and a shell script to compile all of the protobuf definitions for the Alexa Gadgets Toolkit.
 
