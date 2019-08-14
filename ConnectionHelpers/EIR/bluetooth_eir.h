@@ -1,13 +1,10 @@
-// Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 //
-// Licensed under the Amazon Software License (the "License"). You may not use this file except in
-// compliance with the License. A copy of the License is located at
+// Copyright 2019 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+// These materials are licensed under the Amazon Software License in connection with the Alexa Gadgets Program.
+// The Agreement is available at https://aws.amazon.com/asl/.
+// See the Agreement for the specific terms and conditions of the Agreement.
+// Capitalized terms not defined in this file have the meanings given to them in the Agreement.
 //
-//    http://aws.amazon.com/asl/
-//
-// or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, express or implied. See the License for the specific
-// language governing permissions and limitations under the License.
 
 #ifndef _BLUETOOTH_EIR_H
 #define _BLUETOOTH_EIR_H
