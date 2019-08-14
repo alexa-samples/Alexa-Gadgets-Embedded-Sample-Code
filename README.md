@@ -1,4 +1,4 @@
-# Alexa Gadgets Sample Code
+# Alexa Gadgets Embedded Sample Code
 
 This repository contains resources for Alexa Gadgets developers. For information on how to get started, developer documentation, and API references, please visit the [Alexa Gadgets Toolkit developer pages](https://developer.amazon.com/docs/alexa-gadgets-toolkit/understand-alexa-gadgets-toolkit.html).
 
