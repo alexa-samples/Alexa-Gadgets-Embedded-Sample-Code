@@ -1,0 +1,36 @@
+//
+// Copyright 2019 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+// These materials are licensed under the Amazon Software License in connection with the Alexa Gadgets Program.
+// The Agreement is available at https://aws.amazon.com/asl/.
+// See the Agreement for the specific terms and conditions of the Agreement.
+// Capitalized terms not defined in this file have the meanings given to them in the Agreement.
+//
+
+syntax = "proto3";
+
+message FirmwareComponent {
+    uint32 version = 1;
+    string name = 2;
+    uint32 size = 3;
+    string signature = 4;
+}
+
+message FirmwareInformation {
+    uint32 version = 1;
+    string name = 2;
+    repeated FirmwareComponent components = 3;
+    string locale = 4;
+    string version_name = 5;
+}
+
+message UpdateComponentSegment {
+    string component_name = 1;
+    uint32 component_offset = 2;
+    uint32 segment_size = 3;
+    string segment_signature = 4;
+}
+
+message ApplyFirmware {
+    FirmwareInformation firmware_information = 1;
+    bool restart_required = 2;
+}

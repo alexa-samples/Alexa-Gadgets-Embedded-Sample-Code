@@ -17,7 +17,7 @@ The above mentioned files can be downloaded from the following link:
 https://tls.mbed.org/ (Apache 2.0 License)
 
 The file: create_secret.c can be used as a reference on how to create the deviceToken required as a mandatory fields in the Discovery Response send back to the Echo device after initial connection, as described here:
-https://developer.amazon.com/docs/alexa-gadgets-toolkit-preview/alexa-discovery-interface.html#AdditionalIdentification
+https://developer.amazon.com/docs/alexa-gadgets-toolkit/alexa-discovery-interface.html#AdditionalIdentification
 
 Steps:
 1. Replace the "device_secret" char array with the device secret received from the dev portal

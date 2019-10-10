@@ -1,0 +1,16 @@
+//
+// Copyright 2019 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+// These materials are licensed under the Amazon Software License in connection with the Alexa Gadgets Program.
+// The Agreement is available at https://aws.amazon.com/asl/.
+// See the Agreement for the specific terms and conditions of the Agreement.
+// Capitalized terms not defined in this file have the meanings given to them in the Agreement.
+//
+
+FirmwareComponent.name max_size:16
+FirmwareComponent.signature max_size:48
+FirmwareInformation.name max_size:16
+FirmwareInformation.components max_count:1
+FirmwareInformation.locale max_size:8
+FirmwareInformation.version_name max_size:16
+UpdateComponentSegment.component_name max_size:16
+UpdateComponentSegment.segment_signature max_size:48

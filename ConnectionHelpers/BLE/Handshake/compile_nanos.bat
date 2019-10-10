@@ -23,7 +23,7 @@ set PROTO_COMPILE_PATH=C:\nanopb\nanopb-0.3.9.1-windows-x86\generator-bin\
 
 set PROTO_COMMAND_NAME=protoc.exe
 set PROTO_COMMAND=%PROTO_COMPILE_PATH%%PROTO_COMMAND_NAME%
-set INPUT_ROOT=%cd%\..\..
+set INPUT_ROOT=%cd%\..\..\..
 set OUTPUT_PATH=%cd%
 
 
@@ -34,16 +34,8 @@ if exist %PROTO_COMMAND% (
 	goto :eof
 )
 
-for /R %INPUT_ROOT%\AlexaGadgetsProtobuf %%G in (*.proto) do (
-	cd %%~pG
-	:: skip the \common folder
-	echo "%%G" | FIND /I "common" 1>NUL) || (
-		echo Compiling %%G
-		%PROTO_COMMAND% -I%INPUT_ROOT%\AlexaGadgetsProtobuf\common;. --nanopb_out=%OUTPUT_PATH% %%~nG%%~xG
-	)
-)
-for /R %INPUT_ROOT%\AlexaGadgetsProtobuf\common %%G in (*.proto) do (
+for /R  %INPUT_ROOT%\ConnectionHelpers\BLE\Proto %%G in (*.proto) do (
 	cd %%~pG
 	echo Compiling %%G
-	%PROTO_COMMAND% -I. --nanopb_out=%OUTPUT_PATH% %%~nG%%~xG
+	%PROTO_COMMAND% -I%INPUT_ROOT%\AlexaGadgetsProtobuf\common;. --nanopb_out=%OUTPUT_PATH% %%~nG%%~xG
 )

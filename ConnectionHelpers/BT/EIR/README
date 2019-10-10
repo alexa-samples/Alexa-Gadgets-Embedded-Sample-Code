@@ -1,7 +1,7 @@
 The bluetooth_eir.c contains methods to generate the EIR data using the following API:
 
 #Specification:
-https://developer.amazon.com/docs/gadgets-sdk/gadget-settings-bluetooth-communication.html#eir
+https://developer.amazon.com/docs/alexa-gadgets-toolkit/classic-bluetooth-settings.html#eir
 
 void construct_gadget_eir(uint8_t* buffer, uint8_t* p_len, const char* gadget_name, uint16_t pid, uint16_t vid);
 

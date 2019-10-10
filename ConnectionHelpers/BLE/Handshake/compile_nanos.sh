@@ -10,13 +10,13 @@
 echo 'compiling proto files'
 
 echo $(pwd)
-echo $USER
+#echo $USER
 PROTO_COMPILE_PATH='/Users/'$USER'/Downloads/nanopb-0.3.9.1-macosx-x86/generator-bin'
 PROTO_COMMAND_NAME='protoc'
 
 PROTO_COMMAND=$PROTO_COMPILE_PATH/$PROTO_COMMAND_NAME
-INPUT_COMMON='-I=../common/ '
 INPUT_TAG='-I='
+INPUT_COMMON='-I=../../../AlexaGadgetsProtobuf/common/ '
 PROTO_EXT='*.proto'
 FORWARD_SLASH_PATH='/'
 SPACE=' '
@@ -24,7 +24,7 @@ NANOPB_OUT='--nanopb_out=-I'
 COLON_SEP=':'
 CURRENT_FOLDER='.'
 
-all_proto_files=$(find ../. -name "*.proto")
+all_proto_files="$(find ../. -name "accessories.proto")"
 #echo $all_proto_files
 
 for file in $all_proto_files; do
