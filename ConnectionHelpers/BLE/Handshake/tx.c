@@ -266,11 +266,16 @@ packet_list_t *createCommandApplyFirmware() {
     ApplyFirmware *applyFirmware = &controlEnvelope.payload.apply_firmware;
     applyFirmware->restart_required = true;
     applyFirmware->firmware_information.version = 12;
-    applyFirmware->firmware_information.components_count = 1;
     strcpy(applyFirmware->firmware_information.name, "FirmwareName");
     strcpy(applyFirmware->firmware_information.locale, "enUS");
     strcpy(applyFirmware->firmware_information.version_name, "Version 12");
-    strcpy(applyFirmware->firmware_information.components[0].name, "ComponentName");
+
+    applyFirmware->firmware_information.components_count = 1;
+    FirmwareComponent * firmwareComponent = &applyFirmware->firmware_information.components[0];
+    strcpy(firmwareComponent->name, "ComponentName");
+    // note: cannot overwrite the last byte of the signature because nanopb needs null termination.
+    memset(firmwareComponent->signature, 0xBB, sizeof(firmwareComponent->signature) - 1);
+
 
     printf("Creating command: %s\n", commandToString(controlEnvelope.command));
     return createControlPacket(&controlEnvelope, true);
