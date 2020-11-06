@@ -21,7 +21,7 @@ https://developer.amazon.com/docs/alexa-gadgets-toolkit/alexa-discovery-interfac
 
 Steps:
 1. Replace the "device_secret" char array with the device secret received from the dev portal
-2. Replace the "gadgetId" char array with the Gadget Device Id received from the dev portal.
+2. Replace the "gadgetId" char array with the endpointId that the gadget sends
 3. Save the create_secret.c file, and using a gcc compile, create the executable:
 
 gcc platform.c platform_util.c sha256.c create_secret.c -o create_secret

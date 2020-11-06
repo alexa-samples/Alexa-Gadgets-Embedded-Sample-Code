@@ -19,7 +19,7 @@ int main()
     //Device Token Recevied from the dev-portal at gadget registration
     char* device_secret = "76AB4E896EE2A081BCAEA241058A2EEC2D016C250CF355451D7A7009A560B3F2";
 
-    //Gadget ID is the AmazonDeviceType received from the dev-portal at the time of gadget registeration
+    //Gadget ID is the endpointId (also called the device serial number (DSN)) that the gadget sends the Echo device in the Alexa.Discovery.Discover.Response event
     char* gadgetId = "G0A0B0C0D0";
 
     //The concatenated result of gadgetID and the deviceType
